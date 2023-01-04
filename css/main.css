@@ -8,7 +8,6 @@ padding: 0;
 .container{
     display: inline-block;
     width: 100%;
-    background-color: cornflowerblue;
 }
 
 .drop-down{
@@ -20,3 +19,68 @@ padding: 0;
     line-height: 1em;
 }
 
+.left-column{
+    width: 30%;
+    margin-left: 15%;
+    float: left;
+}
+
+.main-img,
+.alt-img{
+    width: 100%;
+}
+
+.main-img,
+.left-column:hover > .alt-img {
+    display: block;
+}
+
+.alt-img,
+.left-column:hover > .main-img {
+    display: none;
+}
+
+.right-column{
+    float: right;
+    width: 40%;
+    margin-right: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title{
+    font-size: 200px;
+    color: #1951FB;
+    line-height: 1em;
+    margin-top: 0.5em;
+}
+
+.title-2,
+.button{
+    font-size: 20px;
+    line-height: 1em;
+    margin-top: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.description{
+    color: #B1AFB9;
+    font-size: 16px;
+    margin-top: 1em;
+    margin-bottom: 4em;
+}
+
+.button{
+    text-decoration: none;
+    margin-top: 0;
+    color: #000;
+}
+
+.fa-long-arrow-right{
+    margin-left: 1em;
+}
+
+.button:hover{
+    text-decoration: underline;
+    color: #1951FB;
+}
