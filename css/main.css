@@ -6,8 +6,13 @@ padding: 0;
 }
 
 .container{
-    display: inline-block;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main.container {
+    padding: 0 10%;
 }
 
 .drop-down{
@@ -20,9 +25,9 @@ padding: 0;
 }
 
 .left-column{
-    width: 30%;
-    margin-left: 15%;
-    float: left;
+    width: 40%;
+    max-width: 400px;
+    user-select: none;
 }
 
 .main-img,
@@ -41,24 +46,25 @@ padding: 0;
 }
 
 .right-column{
-    float: right;
-    width: 40%;
-    margin-right: 10%;
+    width: 400px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
 }
 
 .title{
+    display: inline-block;
     font-size: 200px;
     color: #1951FB;
     line-height: 1em;
-    margin-top: 0.5em;
 }
 
 .title-2,
 .button{
     font-size: 20px;
     line-height: 1em;
-    margin-top: 2em;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -66,14 +72,13 @@ padding: 0;
 .description{
     color: #B1AFB9;
     font-size: 16px;
-    margin-top: 1em;
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 
 .button{
     text-decoration: none;
-    margin-top: 0;
     color: #000;
+    user-select: none;
 }
 
 .fa-long-arrow-right{
@@ -83,4 +88,20 @@ padding: 0;
 .button:hover{
     text-decoration: underline;
     color: #1951FB;
+}
+
+@media (max-width: 680px) {
+    .left-column{
+        display: none;
+    }
+    .right-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .title{
+        font-size: 180px;
+    }
+
 }
